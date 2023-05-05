@@ -7,14 +7,15 @@ import java.util.List;
 
 @Component("carService")
 public class CarService {
+
     List<Car> listOfCars = List.of(
             new Car("Lada", "Sedan", 140),
-            new Car("Bugatti", "Veron", 2000),
-            new Car("Ford", "Focus", 350),
-            new Car("Porshe", "Cayenne", 350),
-            new Car("MersedesBenz", "A5", 600));
+            new Car("Vaz", "Six", 2000),
+            new Car("Lada", "Shniva", 80),
+            new Car("Uaz", "Kozlik", 70),
+            new Car("Vaz", "Zubilo", 999));
 
-    public List<Car> getListOfCars(int index){
+    public List<Car> getListOfCars(int index) {
         if (index < 1) {
             System.out.println("Укажите корректное число автомобилей");
             return null;
